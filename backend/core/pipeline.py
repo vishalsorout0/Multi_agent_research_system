@@ -1,6 +1,7 @@
-from agent import build_search_agent,build_reader_agent,writer_chain,critic_chain
-from logging import logger
+from .agent import build_search_agent,build_reader_agent,writer_chain,critic_chain
+import logging
 
+logger = logging.getLogger(__name__)
 
 search_agent=build_search_agent()
 reader_agent=build_reader_agent()
@@ -70,9 +71,3 @@ def run_research_pipeline(topic:str)->dict:
     return state
 
 
-
-
-if __name__ == '__main__':
-    topic=input("give the topic  for research: ")
-    result= run_research_pipeline(topic)
-    print("\n\n\n\n\n" ,result)
