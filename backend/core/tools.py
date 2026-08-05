@@ -5,9 +5,6 @@ from tavily import TavilyClient
 import os
 from dotenv import load_dotenv
 load_dotenv()
-from rich import print
-
-
 
 
 tavily=TavilyClient(api_key=os.getenv("TAVILY_API_KEY"))
@@ -36,16 +33,17 @@ def scrape_url(url: str) -> str:
         res.raise_for_status()
 
         soup = BeautifulSoup(res.text, "html.parser")
-        for tag in soup(["script", "style", "nav", "footer"]):
+        for tag in soup(["script", "style", "nav", "footer", "header", "aside", "form", "noscript", "svg"]):
             tag.decompose()
 
-        text = soup.get_text(separator=" ", strip=True)
+        main = soup.find("article") or soup.find("main")
+        text = main.get_text(" ", strip=True) if main else soup.get_text(" ", strip=True)
 
         # Skip pages with very little content
         if len(text) < 300:
             return ""
 
-        return text[:5000]
+        return text[:2000]
 
     except Exception as e:
         print(f"Skipping {url}: {e}")

@@ -1,6 +1,7 @@
 # Pydantic models
 
 from pydantic import BaseModel
+from typing import List, Dict
 
 
 class ResearchRequest(BaseModel):
@@ -8,6 +9,7 @@ class ResearchRequest(BaseModel):
 
 
 class ResearchResponse(BaseModel):
-    search_results: str
+    search_results: List[Dict]
     scraped_content: str
     report: str
+    critic_report: str

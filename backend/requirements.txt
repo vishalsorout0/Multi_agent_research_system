@@ -8,7 +8,8 @@ langchain-openai>=0.1.0
 openai>=1.30.0
 
 #mistrai ai
-langchain-mistrai
+langchain-mistralai
+
 
 #groq ai
 langchain-groq
@@ -47,3 +48,9 @@ pydantic>=2.5.0
 
 # Optional (for advanced parsing / HTML cleanup)
 html5lib>=1.1
+
+
+
+fastapi>=0.110.0
+uvicorn>=0.29.0
+langchain-mistralai>=0.1.0

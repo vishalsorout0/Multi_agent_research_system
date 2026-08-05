@@ -8,4 +8,5 @@ def generate_report(query: str):
         "search_results": result["search_results"],
         "scraped_content": result["scraped_content"],
         "report": result["report"],
+        "critic_report": result["critic_report"],
     }
