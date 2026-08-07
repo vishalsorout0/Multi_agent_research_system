@@ -9,9 +9,9 @@ from dotenv import load_dotenv
 load_dotenv()
 
 
-llm=ChatMistralAI(model="mistral-small-2506",temperature=0)
+# llm=ChatMistralAI(model="mistral-small-2506",temperature=0)
 # llm=ChatGoogleGenerativeAI(model="gemini-2.5-flash",temperature=0.2)
-# llm=ChatGroq(model="llama-3.3-70b-versatile",temperature=0)
+llm=ChatGroq(model="llama-3.3-70b-versatile",temperature=0)
 
 
 def build_search_agent():
