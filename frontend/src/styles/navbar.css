@@ -1,0 +1,37 @@
+.navbar{
+    display:flex;
+    align-items:center;
+    height: auto;
+    padding:40px 2%;
+    background:#111827;
+}
+
+.main-logo{
+        align-items:center;
+        display:flex;
+        width:400px;
+        margin-right: 30px;
+        cursor:pointer;
+}
+
+.navbar-hero-logo{
+    width: 50px;
+    height: auto;
+    margin-right:20px;
+}
+
+.navbar h2{
+    margin-top: 20px;
+    font-size: 20px;
+    color:rgb(146, 169, 218);
+    
+}
+
+.navbar a{
+    color:#60a5fa;
+    text-decoration:none;
+    font-weight:bold;
+    font-size: 30px;
+    margin-right:30px;
+    margin-left:auto;
+}

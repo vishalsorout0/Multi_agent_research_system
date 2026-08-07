@@ -1,0 +1,66 @@
+.section{
+    margin-top:50px;
+}
+
+.card{
+    max-height:500px;
+    background:#1e293b;
+    padding:20px;
+    margin-bottom:20px;
+    border-radius:10px;
+    line-height:1.8;
+    overflow:auto;
+}
+
+.action-btn{
+    padding:12px 22px;
+    margin-right:12px;
+    margin-bottom:20px;
+    border:none;
+    border-radius:10px;
+    background:linear-gradient(135deg,#2563eb,#7c3aed);
+    color:white;
+    font-size:15px;
+    font-weight:600;
+    cursor:pointer;
+    transition:all 0.3s ease;
+    box-shadow:0 4px 15px rgba(37,99,235,0.3);
+}
+
+.action-btn:hover{
+    transform:translateY(-3px) scale(1.05);
+    box-shadow:0 8px 25px rgba(124,58,237,0.6);
+}
+.scraped-card{
+    margin-top:20px;
+    max-height:500px;
+    overflow-y:auto;
+    animation:fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(-10px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+.action-btn:active{
+    transform:scale(0.96);
+}
+
+.card a{
+    color:#60a5fa;
+}
+
+.markdown{
+    white-space:normal;
+}
+
+pre{
+    white-space:pre-wrap;
+}
