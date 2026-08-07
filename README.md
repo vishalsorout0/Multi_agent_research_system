@@ -105,10 +105,6 @@ Frontend provides:
           Reader Agent
    (Source Selection + Scraping)
 
-                 ↓
-
-        Analyzer Agent
-   (Information Processing)
 
                  ↓
 
@@ -139,15 +135,11 @@ Frontend provides:
 - Selects important URLs
 - Extracts webpage content
 
-4. Analyzer Agent:
-- Processes gathered information
-- Identifies important facts
-- Creates structured research notes
 
-5. Writer Agent:
+4. Writer Agent:
 - Converts research into a professional report
 
-6. Critic Agent:
+5. Critic Agent:
 - Reviews report quality
 - Provides feedback and scoring
 
