@@ -189,6 +189,7 @@ Frontend provides:
 # 📂 Project Structure
 Folder PATH listing for volume New Volume
 Volume serial number is 00000095 9C02:CAE4
+```bash
 Multi-Agent Research System:
 │  
 │   
@@ -298,8 +299,7 @@ Multi-Agent Research System:
                 navbar.css
                 pipeline.css
                 search.css
-
-
+```
 ---
 
 # ⚙️ Installation
@@ -415,7 +415,7 @@ Responsibilities:
 
 Evaluates report quality
 Provides improvement suggestions
-
+---
 📌 Learning Outcomes
 
 This project demonstrates:

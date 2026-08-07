@@ -9,7 +9,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 
-llm=ChatMistralAI(model="mistral-small-2506",temperature=0,max_tokens=1000)
+llm=ChatMistralAI(model="mistral-small-2506",temperature=0,max_tokens=800)
 # llm=ChatGroq(model="llama-3.3-70b-versatile",temperature=0)
 
 
